@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -24,6 +25,19 @@ public class MainActivity extends AppCompatActivity {
 
         AdaptadorPersonalizado miAdaptador = new AdaptadorPersonalizado(listaPrincipalProductos);
 
+        miAdaptador.setOnItemClickListener(new AdaptadorPersonalizado.OnItemClickListener() {
+            @Override
+            public void onItemClick(Producto miProducto, int posicion) {
+                Toast.makeText(MainActivity.this, "HICE CLICK DESDE ACTIVITY " + miProducto.getNombre(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onItemBtEliminarClick(Producto miProducto, int posicion) {
+                listaPrincipalProductos.remove(posicion);
+                miAdaptador.setListadoInformacion(listaPrincipalProductos);
+            }
+        });
+
         rvListadoProductos.setAdapter(miAdaptador);
         rvListadoProductos.setLayoutManager(new LinearLayoutManager(this));
 
@@ -40,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
         //inicializar el arraylist
         listaPrincipalProductos = new ArrayList<>();
         //agregar los productos al arraylist
+        listaPrincipalProductos.add(producto1);
+        listaPrincipalProductos.add(producto2);
+        listaPrincipalProductos.add(producto3);
         listaPrincipalProductos.add(producto1);
         listaPrincipalProductos.add(producto2);
         listaPrincipalProductos.add(producto3);
