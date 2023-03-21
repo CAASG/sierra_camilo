@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">sierra_camilo</string>
+    <string name="tv_titulo">TextView</string>
+    <string name="txt_listadoDeProductos">Listado de productos</string>
+    <string name="tv_precio2">TextView</string>
+    <string name="txt_detalleProd">Detalle Producto</string>
 </resources>
