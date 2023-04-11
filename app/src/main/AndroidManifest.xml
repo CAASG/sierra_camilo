@@ -14,9 +14,6 @@
         android:theme="@style/Theme.Sierra_camilo"
         tools:targetApi="31">
         <activity
-            android:name=".FormularioActivity"
-            android:exported="false" />
-        <activity
             android:name=".DetalleActivity"
             android:exported="false" />
         <activity
