@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormularioActivity">
+
+    <EditText
+        android:id="@+id/et_nombreNuevoProducto"
+        android:layout_width="252dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_imagenNuevoProducto"
+        android:layout_width="255dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_precioNuevoProducto" />
+
+    <EditText
+        android:id="@+id/et_precioNuevoProducto"
+        android:layout_width="251dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="104dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/precio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombreNuevoProducto" />
+
+    <Button
+        android:id="@+id/btn_agregar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="159dp"
+        android:text="@string/agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_imagenNuevoProducto" />
+</androidx.constraintlayout.widget.ConstraintLayout>

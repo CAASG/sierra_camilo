@@ -18,24 +18,13 @@ public class Producto implements Serializable {
     public String getNombre() {
         return nombre;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
     public Double getPrecio() {
         return precio;
     }
-
-    public void setPrecio(Double precio) {
-        this.precio = precio;
-    }
-
-    public String getUrlimagen() {
-        return urlimagen;
-    }
-
-    public void setUrlimagen(String urlimagen) {
-        this.urlimagen = urlimagen;
-    }
+    public void setPrecio(Double precio) { this.precio = precio; }
+    public String getUrlimagen() { return urlimagen; }
+    public void setUrlimagen(String urlimagen) { this.urlimagen = urlimagen; }
 }

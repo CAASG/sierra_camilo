@@ -4,4 +4,9 @@
     <string name="txt_listadoDeProductos">Listado de productos</string>
     <string name="tv_precio2">TextView</string>
     <string name="txt_detalleProd">Detalle Producto</string>
+    <string name="agregar_producto">Agregar Producto</string>
+    <string name="agregar">Agregar</string>
+    <string name="imagen">Imagen</string>
+    <string name="precio">Precio</string>
+    <string name="nombre">Nombre</string>
 </resources>
