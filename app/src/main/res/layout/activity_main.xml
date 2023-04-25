@@ -25,6 +25,7 @@
             android:layout_marginEnd="20dp"
             android:background="@drawable/shape_btn_agregarprod"
             android:backgroundTint="@color/color_unab"
+            android:onClick="clickAgregarProducto"
             android:text="@string/agregar_producto"
             app:layout_constraintBottom_toTopOf="@+id/rv_listado_productos"
             app:layout_constraintEnd_toEndOf="parent"

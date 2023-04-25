@@ -58,6 +58,7 @@
         android:layout_marginStart="158dp"
         android:layout_marginTop="96dp"
         android:layout_marginEnd="159dp"
+        android:onClick="clickAgregar"
         android:text="@string/agregar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
