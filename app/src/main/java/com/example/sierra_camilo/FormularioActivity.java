@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class FormularioActivity extends AppCompatActivity {
 
@@ -30,6 +33,10 @@ public class FormularioActivity extends AppCompatActivity {
         nuevoProducto.setUrlimagen(url);
         nuevoProducto.setNombre(nombre);
 
-
+        FirebaseFirestore firestore = FirebaseFirestore.getInstance();
+        firestore.collection("productos").add(nuevoProducto);
+        
+        Toast.makeText(this, "SE CREO EL PRODUCTO", Toast.LENGTH_SHORT).show();
+        finish();
     }
 }
